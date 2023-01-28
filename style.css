@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "mumblers_demoregular";
+    color: #262626;
+    background-color: orange;
+  }
+  
+  .container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+  }
+  
+  .groceries{
+    width: 600px;
+    min-height: 100vh;
+    padding-top: 20px;
+    margin:auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.50);  
+  }
+  
+  .groceries h1{
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+
+  
+  .groceries i{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: lightpink;
+  }
+  
+  .groceries form input{
+    font-family: Arial, Helvetica, sans-serif;
+    outline: 0;
+    border: 0;
+    width: 70%;
+    font-size: 1.5rem;
+    border-bottom: 5px solid lightgray;
+  }
+  
+ 
+  #allItems h2{
+   margin-left: 50px;
+   margin-right: 10px;
+   margin-top: 2rem;
+   font-size: 2rem;
+
+  }
+  
+  @media(max-width:768px) {
+    #groceryItems {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media(max-width:480px){
+    .groceries h1{
+      font-size: 2rem;
+    }
+  
+    .groceries i{
+      font-size: 2rem;
+    }
+  
+    .groceries input{
+      font-size: 1rem;
+    }
+  
+    .allItems h2{
+      font-size: 0.9rem;
+    }
+  }
